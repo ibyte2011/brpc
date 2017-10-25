@@ -52,8 +52,10 @@ Rerun `config_brpc.sh`, `make` in test/, and `sh run_tests.sh`
 
 install common deps: `git g++ make openssl-devel`
 
-install [gflags](https://github.com/gflags/gflags), [protobuf](https://github.com/google/protobuf), [leveldb](https://github.com/google/leveldb), including: `gflags-devel protobuf-devel protobuf-compiler leveldb-devel`.
-
+install [gflags](https://github.com/gflags/gflags), [protobuf](https://github.com/google/protobuf), [leveldb](https://github.com/google/leveldb), including: `gflags-devel protobuf-devel protobuf-compiler leveldb-devel`:
+```
+sudo yum install gtest-devel gflags-devel protobuf-devel protobuf-compiler leveldb-devel
+```
 ### Compile brpc
 
 git clone brpc, cd into the repo and run
